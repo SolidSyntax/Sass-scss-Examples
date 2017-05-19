@@ -1,0 +1,17 @@
+//Functions are similar to mixins but the output is a single value
+
+//Build-in functions examples
+//Complete list: http://sass-lang.com/documentation/Sass/Script/Functions.html
+$green: green;
+$darker-green: darken($green,20%);
+$lighter-green: lighten($green,20%);
+$opaque-green: darken($green,0.5);
+
+//Create a function
+@function calc-percent($target, $container){
+    @return ($target/$container) * 100;
+}
+
+.container{
+    padding:calc-percent(100px, 200px);
+}

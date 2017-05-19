@@ -1,0 +1,177 @@
+/*
+This file imports a list of partial scss files from the partial directory.
+Each partial file contains code fragments from a selected scss feature. 
+*/
+/* 
+Multi line comments, preserved in css
+*/
+class-in-snippet {
+  color: white; }
+
+import-nesting class-in-snippet {
+  color: white; }
+
+variables {
+  font: 100% Helvetica, sans-serif;
+  color: #333; }
+
+color-operations {
+  color: #66c8ff;
+  background-color: #ff2b5b; }
+
+arithmetic-1 {
+  font-size: 6px; }
+
+arithmetic-2 {
+  font-size: 2px; }
+
+arithmetic-3 {
+  font-size: 5;
+  opacity: 0.8;
+  padding-right: 3.5px; }
+
+conditionals-and-interpolation:after {
+  content: "My font is: sans-serif."; }
+
+comparison-operator {
+  padding: 25px; }
+
+conditional-if-true {
+  color: blue; }
+
+conditional-color-true {
+  color: blue; }
+
+conditional-color-false {
+  color: blue; }
+
+conditional-text-weight-none {
+  color: white; }
+
+conditional-text-weight-bold {
+  color: white;
+  font-weight: bold; }
+
+logical-operator:after {
+  content: "First and last name do not match"; }
+
+string-operations:after {
+  content: "Your name is: Ronald Deschain"; }
+
+.message, .succes, .error, .importantMessage {
+  border: 1px solid black;
+  padding: 10px;
+  color: blue; }
+
+.succes {
+  border-color: green; }
+
+.error {
+  border-color: red; }
+
+.important, .importantMessage {
+  font-size: 3em;
+  color: black;
+  background-color: yellow; }
+
+.importantMessage {
+  border-width: 3px; }
+
+.button-ampersand:visited {
+  color: white; }
+.button-ampersand:hover {
+  color: white; }
+.button-ampersand:active {
+  color: white; }
+.button-ampersand > span {
+  color: white; }
+.button-ampersand + span {
+  color: white; }
+.button-ampersand ~ span {
+  color: white; }
+
+.button-ampersand-primary {
+  color: white; }
+.button-ampersand-secondary {
+  color: white; }
+
+body.footer .button-ampersand {
+  color: white; }
+
+.uses-a-placeholder-selector {
+  color: red; }
+
+.uses-a-placeholder-selector {
+  background: yellow; }
+
+.list-color-1 {
+  color: red;
+  font: "Dosis"; }
+
+.list-color-2 {
+  color: green;
+  font: "Roboto"; }
+
+.list-color-3 {
+  color: blue;
+  font: "serif"; }
+
+.list-color-4 {
+  color: yellow;
+  font: "monospace"; }
+
+.map-color-red {
+  background: #ff0000; }
+
+.map-color-green {
+  background: #00ff00; }
+
+.map-color-blue {
+  background: #0000ff; }
+
+.at-root-example {
+  background: yellow;
+  border: 1px solid red;
+  font-size: 1rem; }
+  a.at-root-example {
+    text-decoration: none; }
+
+.container {
+  padding: 50; }
+
+.loop-item-1 {
+  width: 15px; }
+
+.loop-item-2 {
+  width: 30px; }
+
+.loop-item-3 {
+  width: 45px; }
+
+.each-color-red {
+  background-color: red; }
+
+.each-color-green {
+  background-color: green; }
+
+.each-color-blue {
+  background-color: blue; }
+
+.success-message {
+  color: green;
+  font-weight: normal; }
+
+.error-message {
+  color: red;
+  font-weight: bold; }
+
+.while-counter-1 {
+  border-width: 2 px; }
+
+.while-counter-2 {
+  border-width: 4 px; }
+
+.while-counter-3 {
+  border-width: 6 px; }
+
+/*# sourceMappingURL=main.css.map */

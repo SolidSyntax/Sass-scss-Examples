@@ -1,0 +1,17 @@
+//Logical operators
+$first-name: 'Ronald';
+$last-name: 'Deschain';
+
+@mixin logical(){ 
+    &:after{ //& = reference to parent 'h6:after'
+        @if $first-name == "Ronald" and $last-name == "Dearborne"{ //'and', 'or'
+            content: "First and last name match"
+        } @else{
+            content: "First and last name do not match";
+        }
+    }
+}
+
+logical-operator{
+    @include logical()
+}

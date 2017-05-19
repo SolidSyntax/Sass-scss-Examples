@@ -1,0 +1,16 @@
+//Ampersand
+.button-ampersand{
+    &:visited{color: white} //& is a parent child relationship
+    &:hover{color: white}
+    &:active{color: white}
+    & > span{color: white}
+    & + span{color: white}
+    & ~ span{color: white}
+}
+.button-ampersand{
+    &-primary{color: white} 
+    &-secondary{color: white}
+}
+.button-ampersand{
+  body.footer &{color: white} //order can be reversed
+}

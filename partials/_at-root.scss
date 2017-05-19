@@ -1,0 +1,13 @@
+.at-root-example {
+    background: yellow;
+    border: 1px solid red;
+
+    font: {
+        size: 1rem;
+    }
+
+    //'jumps out' of the current selector
+    @at-root a#{&}{
+        text-decoration: none;
+    }
+}

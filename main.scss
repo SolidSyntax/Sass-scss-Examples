@@ -1,0 +1,34 @@
+/*
+This file imports a list of partial scss files from the partial directory.
+Each partial file contains code fragments from a selected scss feature. 
+*/
+
+
+//Single line comment, removed in CSS
+
+/* 
+Multi line comments, preserved in css
+*/
+
+//Import a partial (= a snippet of scss, starting with an _)
+//Partials do not get directly compiled
+@import 'partials/snippet'; //_ is optional, identical to 'partials/_snippet' 
+
+//Import can be nested
+import-nesting{
+    @import 'partials/snippet';
+}
+
+@import 'partials/variables_and_datatypes';
+@import 'partials/arithmetic.scss';
+@import 'partials/conditionals.scss';
+@import 'partials/logical.scss';
+@import 'partials/string_opperations.scss';
+@import 'partials/inheritence.scss';
+@import 'partials/ampersand.scss';
+@import 'partials/placeholder_selector';
+@import 'partials/lists';
+@import 'partials/maps';
+@import 'partials/at-root';
+@import 'partials/functions';
+@import 'partials/loops';

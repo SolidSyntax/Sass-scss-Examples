@@ -1,0 +1,26 @@
+//Inheritence with @extend
+.message{
+    border: 1px solid black;
+    padding: 10px;
+    color: blue;
+}
+.succes{
+    @extend .message;
+    border-color: green;
+}
+.error{
+    @extend .message;
+    border-color: red;
+}
+
+//Multiple extends
+.important{
+    font-size: 3em;
+    color: black;
+    background-color: yellow;
+}
+.importantMessage{
+    @extend .message;
+    @extend .important;
+    border-width: 3px;
+}

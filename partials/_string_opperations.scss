@@ -1,0 +1,10 @@
+//String operations
+@mixin string-concat-name{
+    &:after{ 
+        content: "Your name is: " + $first-name + " " + $last-name
+    }
+}
+
+string-operations{
+    @include string-concat-name;
+}

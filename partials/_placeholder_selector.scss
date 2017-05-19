@@ -1,0 +1,9 @@
+//Placeholder selectors
+%placeholder-selector{//Will not be included in the generated stylesheet
+    color:red
+}
+
+.uses-a-placeholder-selector{
+    @extend %placeholder-selector;
+    background: yellow
+}

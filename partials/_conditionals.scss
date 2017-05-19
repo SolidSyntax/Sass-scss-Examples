@@ -1,0 +1,64 @@
+//Conditionals & Interpolation
+@mixin font-fl($font){ //a Mixin is a reusable component, it can contain parameters
+    &:after{
+        @if(type-of($font) == string){ //Equality operator
+            content: 'My font is: #{$font}.' //Interpolation
+        } @else{
+            content: 'Sorry, the argument #{$font} is a #{type-of($font)}.';
+        }
+    }
+}
+
+conditionals-and-interpolation{
+    @include font-fl(sans-serif)
+}
+
+//Comparison opperators
+$padding: 50px;
+comparison-operator{
+    @if($padding <= 20px){
+        padding: $padding;
+   } @else {
+        padding: $padding/2;
+   } 
+}
+
+//Conditional 
+//When true add a border
+//When false add a color
+conditional-if-true{
+    @if (1 > 2) {
+            border: 1px solid;
+        } @else{
+            color: blue
+        }
+}
+
+//Color based on condition
+@mixin conditional-color($condition){
+    $color: if($condition,blue,red);
+    color: $color;
+}
+
+conditional-color-true{
+    @include conditional-color(true);
+
+}
+
+conditional-color-false{
+    @include conditional-color(true);
+}
+
+//Bold based on condition
+@mixin conditional-text-weight($weight){
+    color: white;
+    @if $weight == bold {font-weight: bold};
+}
+
+conditional-text-weight-none{
+    @include conditional-text-weight(none);
+}
+
+conditional-text-weight-bold{
+    @include conditional-text-weight(bold);
+}

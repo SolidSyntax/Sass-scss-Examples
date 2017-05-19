@@ -1,0 +1,22 @@
+//Variables, declared by $ 
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+variables{
+    font:100% $font-stack;
+    color: $primary-color;
+}
+
+//Datatypes
+$null-type: null;
+$boolean-type: true;
+$number-type: 8;
+$string-type: 'A Value' + 'can be concatenated';
+$color-type: #998088;
+$calculated-color-type: lighten(white,15%); //http://sass-lang.com/documentation/Sass/Script/Functions.html
+
+//Color operations
+color-operations{
+    color:rgba(70,132,153,1) + rgba(32,68,121,1); //Alpha values must match
+    background-color: #DC143C + #B0171F;
+}

@@ -1,0 +1,25 @@
+//See _logical.scss and _string_opperations.scss for more examples 
+
+//Mixins can be combined
+@mixin combined-mixin{
+    @include logical;
+    @include string-concat-name
+}
+
+combined-mixin{
+    @include combined-mixin;
+}
+
+//A mixin can contain default values for parameters
+@mixin mixin-border-with-defaults($color,$width: 1in){
+    //varargs are also possible as parameters ($shadows...)
+    border: { //Nested properties
+        color: $color;
+        width: $width;
+        style: dashed;
+    }
+}
+
+mixin-border-with-defaults{
+    @include mixin-border-with-defaults(red)
+}

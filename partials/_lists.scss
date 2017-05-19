@@ -1,0 +1,22 @@
+//Space separated elements
+$background-colors-list: red green blue yellow;
+
+//Comma separated elements
+$font-list: 'Dosis','Roboto', 'serif' , 'monospace';
+
+//Multi list with 2 lists
+$multi-list: 15px, red green;
+
+//Loop over the values of a list
+@each $color in $background-colors-list{
+    //Find the index of the current color in the list
+    $i: index($background-colors-list,$color);
+
+    //Create an item for each index in the list
+    .list-color-#{$i}{
+        color: $color;
+
+        //get a font from the font-list for the current index
+        font: nth($font-list,$i);
+    }
+}
